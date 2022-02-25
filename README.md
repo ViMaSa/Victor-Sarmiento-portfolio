@@ -22,6 +22,12 @@
 - Push changes after each day
 - After delivering mvp's, extra aspects can be added
 
+### Pages
+- Home
+- Bio
+- Resume
+- Projects
+
 
 ### Extras
 - Toggle switch between light/night mode
