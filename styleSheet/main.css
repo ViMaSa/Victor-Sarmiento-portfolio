@@ -2,21 +2,25 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
-body {
-  background-color: #0f0f0f;
+html, body {
+  background-color: #000000;
+  height: 100%;
 }
 
 .hamburger {
   display: inline-block;
   cursor: pointer;
+  height: 100%;
+  background-color: #181818;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #BB86FC;
+  background-color: #346cf0;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -38,10 +42,57 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 70px;
+  width: 100%;
   padding: 1rem;
+  position: fixed;
+  top: 0;
 }
 
 nav p {
   font-size: 2rem;
-  color: #ffffff;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1s, opacity 0.25s linear;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+#menu-aside {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+
+#menu-aside div {
+  background-color: #181818;
+  height: 100%;
+  width: 75vw;
+  border: solid 2px #000000;
+}
+
+section {
+  margin-top: 70px;
+}
+
+#menu-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 10vh;
+  font-size: 2rem;
 }

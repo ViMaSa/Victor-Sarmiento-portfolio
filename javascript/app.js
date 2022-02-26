@@ -1,5 +1,5 @@
-const transitionHamburger = () => {
+const animateHamburger = () => {
   $('.hamburger').toggleClass("change");
 }
 
-$('.hamburger').on("click", transitionHamburger);
+$('.hamburger').on("click", animateHamburger);
