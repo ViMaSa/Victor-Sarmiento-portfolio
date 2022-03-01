@@ -1,5 +1,16 @@
-const animateHamburger = () => {
-  $('.hamburger').toggleClass("change");
+const animateIcon = () => {
+  $('.menu-icon').toggleClass("change");
 }
 
-$('.hamburger').on("click", animateHamburger);
+const animateMenu = () => {
+  const $menu = $('#menu-list-container')
+  if($menu.hasClass('hide')) {
+    $menu.addClass('show').removeClass('hide');
+  }
+  else {
+    $menu.addClass('hide').removeClass('show');
+  }
+}
+
+$('.menu-icon').on("click", animateIcon);
+$('.menu-icon').on("click", animateMenu);

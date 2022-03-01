@@ -10,7 +10,7 @@ html, body {
   height: 100%;
 }
 
-.hamburger {
+.menu-icon {
   display: inline-block;
   cursor: pointer;
   height: 100%;
