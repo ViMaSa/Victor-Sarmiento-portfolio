@@ -1,12 +1,12 @@
 #home-main-div {
-  margin: 20vh 5vw;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #181818;
   border-radius: 10px;
+  box-shadow: 0px 0px 50px 20px #4955ea;
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 5vw;
   padding: 3vh;
-  box-shadow: 20px 20px 50px 10px #4955ea;
 }
 
 #profile-picture {
@@ -22,4 +22,71 @@
 
 #home-main-div h3 {
   margin-top: 3vh;
+}
+
+#contact-form-container {
+  background-color: #181818;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 20px #ea4a56;
+  margin: 10vw;
+  padding: 5vw;
+  text-align: center;
+  align-self: center;
+}
+
+#contact-form-container h1 {
+  text-decoration: underline;
+}
+
+#contact-form-container input {
+  color: black;
+}
+
+#contact-form-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-self: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+
+.input-container {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#form-submit-button {
+  background-color: red;
+  font-size: 1rem;
+  margin: 5vh;
+  padding: 2vh 3vh;
+}
+
+@media screen and (min-width: 480px) {
+  #home-main-div p {
+    font-size: 1rem;
+  }
+
+  #home-main-div h3 {
+    font-size: 1.5rem;
+  }
+
+  #home-main-div h1 {
+    font-size: 2.5rem;
+  }
+
+  #contact-form-box input {
+    width: 20vw;
+  }
+
+  #inquiry-box {
+    text-align: center;
+  }
+
+  #contact-form-box .input-container p {
+    margin-right: 5px;
+  }
 }
