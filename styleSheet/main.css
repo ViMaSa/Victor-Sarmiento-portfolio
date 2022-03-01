@@ -9,6 +9,10 @@ html, body {
   background-color: #000000;
   height: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
 
 .menu-icon {
   display: inline-block;
@@ -44,7 +48,7 @@ nav {
   height: 70px;
   width: 100%;
   padding: 1rem;
-  position: fixed;
+  border-radius: 0 0 10px 10px;
   top: 0;
 }
 
@@ -55,21 +59,24 @@ nav p {
 .hide {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 1s, opacity 0.25s linear;
+  transition: visibility 1s, opacity 0.5s linear;
+  z-index: -1;
 }
 
 .show {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
+  z-index: 1;
+  position: fixed;
 }
 
 #menu-aside {
   display: flex;
   justify-content: flex-end;
   margin-top: 70px;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: fixed;
   top: 0;
 }
@@ -77,12 +84,8 @@ nav p {
 #menu-aside div {
   background-color: #181818;
   height: 100%;
-  width: 75vw;
+  width: 100%;
   border: solid 2px #000000;
-}
-
-section {
-  margin-top: 70px;
 }
 
 #menu-list-container {
@@ -95,4 +98,31 @@ li {
   list-style: none;
   margin: 10vh;
   font-size: 2rem;
+}
+
+footer {
+  margin-top: 5vh;
+  padding: 20px;
+  background-color: #181818;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  display: flex;
+  font-size: .75rem;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+
+footer p {
+  font-size: .75rem;
+}
+
+footer a img {
+  width: 5vw;
 }

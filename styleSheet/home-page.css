@@ -1,0 +1,25 @@
+#home-main-div {
+  margin: 20vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 3vh;
+  box-shadow: 20px 20px 50px 10px #4955ea;
+}
+
+#profile-picture {
+  width: 35vw;
+}
+
+#home-main-div p {
+  font-size: .75rem;
+  margin: 1vh 2vh;
+  text-align: start;
+  max-width: 80vw;
+}
+
+#home-main-div h3 {
+  margin-top: 3vh;
+}

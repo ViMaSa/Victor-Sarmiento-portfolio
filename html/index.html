@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styleSheet/home-page.css">
   <link rel="stylesheet" href="../styleSheet/main.css">
   <title>Home</title>
 </head>
@@ -16,7 +17,7 @@
       <div class="bar3"></div>
     </div>
   </nav>
-  <aside id="menu-aside">
+  <aside id="menu-aside" class="hide">
     <div id="menu-list-container" class="hide">
       <ul>
         <li><a href="../html/bio.html">Bio</a></li>
@@ -25,9 +26,25 @@
       </ul>
     </div>
   </aside>
-  <section>
-    mainsection
+  <section id="home-main-section">
+    <div id="home-main-div">
+      <img src="../images/profile_picture.jpg" alt="profile picture of Victor Sarmiento" id="profile-picture">
+      <h3>Hi, My name is</h3>
+      <h1>Victor Sarmiento</h1>
+      <p>I am a Software Engineer currently based in Las Vegas, Nevada.
+        My goal is to create solutions to problems in the web development world.
+        I’m currently focused on refining my skills and creating personal projects such as this portfolio website.
+      </p>
+    </div>
   </section>
+  <section id="github-component">
+    github component
+  </section>
+  <footer>
+    <a href="https://github.com/ViMaSa" target="_blank"><img src="../icons/GitHub-Mark-Light-64px.png" alt="github icon"></a>
+    <p>Made by Victor Sarmiento</p>
+    <a href="https://www.linkedin.com/in/vimasa/" target="_blank"><img src="../icons/linkedin-logo.png" alt="linkedin icon"></a>
+  </footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../javascript/app.js"></script>
