@@ -1,0 +1,106 @@
+#resume-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+#resume-container {
+  margin: 5vh 10vw;
+  width: 80vw;
+  height: 95vh;
+  background-color: #181818;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 1px #4955ea;
+  display: flex;
+  flex-direction: column;
+}
+
+#work-history-section {
+  width: 70vw;
+  height: 58vh;
+}
+
+#hard-skills-section {
+  width: 70vw;
+  height: 20vh;
+}
+
+.resume-details {
+  margin: 4vh 5vw;
+}
+
+hr {
+  width: 50vw;
+}
+
+#job-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-details h4 {
+  margin-top: 3vh;
+  font-size: .75rem;
+}
+
+.job-details h4 span {
+  font-size: .65rem;
+}
+
+.job-details p {
+  font-size: .65rem;
+  margin: 0 0 1vh 1vw;
+  margin-bottom: 1vh;
+}
+
+.job-details ul {
+  display: block;
+}
+
+.job-details ul li {
+  margin: 1vh 0 0 2vw;
+  list-style: circle;
+  font-size: .65rem;
+}
+
+#job-skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#job-skills ul li {
+  margin: 1vh 0 0 2vw;
+  list-style: circle;
+  font-size: .65rem;
+}
+
+@media screen and (min-width: 480px) {
+  #resume-container .resume-details h1 {
+    font-size: 2rem;
+  }
+
+  #resume-container h4 {
+    font-size: 1.5rem;
+  }
+
+  #resume-container h4 span {
+    font-size: 1.15rem;
+  }
+  
+  .job-details p {
+    font-size: 1.1rem;
+  }
+  
+  .job-details ul li {
+    font-size: 1rem;
+  }
+
+  #job-skills ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #job-skills ul li {
+    font-size: 1rem;
+  }
+}
