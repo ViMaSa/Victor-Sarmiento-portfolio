@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"/>
   <link rel="stylesheet" href="../styleSheet/style.css">
+  <link rel="stylesheet" href="../styleSheet/bio-page.css">
   <title>Bio</title>
 </head>
 <body>
@@ -25,8 +27,42 @@
       </ul>
     </div>
   </aside>
-  <section>
-    mainsection
+  <section id="bio-section">
+    <div class="carousel-container">
+      <div class="carousel-button previous">
+        <span class="lnr lnr-chevron-left"></span>
+      </div>
+      <div class="carousel-images">
+        <img src="../images/microsoft.jpg" alt="Victor at Microsoft-Seattle office">
+        <img src="../images/aws.jpg" alt="Victor and Angel(gf) at AWS Seattle building">
+        <img src="../images/silversheet.jpg" alt="Victor and coworkers at Silversheet - Summer Bash">
+      </div>
+      <div class="carousel-button next">
+        <span class="lnr lnr-chevron-right"></span>
+      </div>
+    </div>
+    <div class="caption-container">
+      <p >Caption: I visited Seattle, Washington and was able to tour some of the Microsoft office.</p>
+      <p style="display: none;">Caption: I toured a few of the amazon buildings.</p>
+      <p style="display: none;">Caption: Selfie from Silversheet Summer bash 2019.</p>
+    </div>
+    <div id="bio-details">
+      <h3>About me</h3>
+      <hr>
+      <p>
+        My name is Victor Sarmiento. I am a Software Engineer based out of Las Vegas, Nevada. After spending some time at University, 
+        I was hired on to be a Software Engieer Contractor at Silversheet Medical Credentialing. It was my first and only job being 
+        recognized as a Software Engineer. I made close connections with my team and stayed with Silverhseet for about 3 years. My 
+        time there was spent learning to grow and become a professional in the web development industry. I took a short sabbatical at 
+        the end of 2021 to spend time with my family and friends during the holidays.
+      </p>
+      <p>
+        My current journey is to finish the Software Engineering Immersive Resident program at General Assembly. I've got to say that 
+        the work has been very helpful in making connections to different concepts I didn't have a full grasp on. I'm looking forward 
+        to finishing this journey and having an even stronger foundation for web development by the end of this. After finishing the 
+        program, I hope to migrate to Washington or Texas to be a software engineer and make an impact at my future employer.
+      </p>
+    </div>
   </section>
   <footer>
     <a href="https://github.com/ViMaSa" target="_blank"><img src="../icons/GitHub-Mark-Light-64px.png" alt="github icon"></a>
@@ -36,4 +72,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../javascript/app.js"></script>
+<script src="../javascript/bio-page.js"></script>
 </html>
