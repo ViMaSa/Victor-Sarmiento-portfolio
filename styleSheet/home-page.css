@@ -11,6 +11,7 @@
 
 #profile-picture {
   width: 35vw;
+  border-radius: 10px;
 }
 
 #home-main-div p {
