@@ -22,7 +22,9 @@ $('.next').on('click', () => {
 
 $('.previous').on('click', () => {
   let $currImg = $('.carousel-images').children().eq(currentImgIndex);
+  let $currCapt = $('.caption-container').children().eq(currentImgIndex)
   $currImg.css('display', 'none');
+  $currCapt.css('display', 'none');
 
   if(currentImgIndex >= 0) {
     currentImgIndex--;
@@ -33,4 +35,6 @@ $('.previous').on('click', () => {
 
   $currImg = $('.carousel-images').children().eq(currentImgIndex);
   $currImg.css('display', 'block');
+  $currCapt = $('.caption-container').children().eq(currentImgIndex)
+  $currCapt.css('display', 'block');
 });
